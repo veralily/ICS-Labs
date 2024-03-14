@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -O -Wall
+CFLAGS = -O -Wall -m32
 
 all: btest
 btest: btest.c bits.c decl.c tests.c btest.h bits.h
@@ -7,4 +7,3 @@ btest: btest.c bits.c decl.c tests.c btest.h bits.h
 
 clean:
 	rm -f *.o btest
-

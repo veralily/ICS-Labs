@@ -13,6 +13,7 @@
 
 #include "btest.h"
 #include <limits.h>
+#include <stdio.h>
 
 /*
  * Instructions to Students:
@@ -331,3 +332,11 @@ int tc2sm(int x) {
 	int sign = temp&0x1;
 	return (sign<<31)+((x^temp)+sign);//signs don't change
 }
+
+// int main(){
+//   int x = 60;
+//   int y = 50;
+//   int a = 7;
+//   printf("%d\n",tc2sm(x));
+//   return 0;
+// }
